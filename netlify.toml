@@ -1,0 +1,18 @@
+  [[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+  [[redirects]]
+  from = "/europa/*"
+  to = "/index.html"
+  status = 200
+  [[redirects]]
+  from = "/americalatina/*"
+  to = "/index.html"
+  status = 200
+
+  [[redirects]]
+  from = "/americadelnorte/*"
+  to = "/index.html"
+  status = 200
