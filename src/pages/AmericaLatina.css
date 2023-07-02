@@ -1,0 +1,31 @@
+.legends {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 0 50px 0;
+  gap: 20px;
+}
+
+.legends p {
+  font-size: 20px;
+  padding: 0 50px 0 50px;
+  text-align: justify;
+}
+
+.legends-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 150px;
+  padding: 50px 0 50px 0;
+}
+
+.legends-img img {
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.legends-img img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
