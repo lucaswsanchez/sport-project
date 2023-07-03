@@ -1,5 +1,5 @@
 import "./Header.css";
-import logo from "../assets/images/header-logo.png";
+import logo from "../assets/images/header-logo.webp";
 
 const Header = () => {
   return (

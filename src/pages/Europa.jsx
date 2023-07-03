@@ -4,21 +4,21 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
 //Imagenes momento 1
-import imagen1d1 from "../assets/images/europa-moment1/europa-moment1-1.jpg";
-import imagen2d1 from "../assets/images/europa-moment1/europa-moment1-2.jpg";
-import imagen3d1 from "../assets/images/europa-moment1/europa-moment1-3.jpg";
-import imagen4d1 from "../assets/images/europa-moment1/europa-moment1-4.jpg";
-import imagen5d1 from "../assets/images/europa-moment1/europa-moment1-5.jpg";
+import imagen1d1 from "../assets/images/europa-moment1/europa-moment1-1.webp";
+import imagen2d1 from "../assets/images/europa-moment1/europa-moment1-2.webp";
+import imagen3d1 from "../assets/images/europa-moment1/europa-moment1-3.webp";
+import imagen4d1 from "../assets/images/europa-moment1/europa-moment1-4.webp";
+import imagen5d1 from "../assets/images/europa-moment1/europa-moment1-5.webp";
 //Imagenes momento 2
-import imagen1d2 from "../assets/images/europa-moment2/europa-moment2-1.jpg";
-import imagen2d2 from "../assets/images/europa-moment2/europa-moment2-2.jpg";
-import imagen3d2 from "../assets/images/europa-moment2/europa-moment2-3.jpg";
-import imagen4d2 from "../assets/images/europa-moment2/europa-moment2-4.jpg";
+import imagen1d2 from "../assets/images/europa-moment2/europa-moment2-1.webp";
+import imagen2d2 from "../assets/images/europa-moment2/europa-moment2-2.webp";
+import imagen3d2 from "../assets/images/europa-moment2/europa-moment2-3.webp";
+import imagen4d2 from "../assets/images/europa-moment2/europa-moment2-4.webp";
 //Imagenes momento 3
-import imagen1d3 from "../assets/images/europa-moment3/europa-moment3-1.jpg";
-import imagen2d3 from "../assets/images/europa-moment3/europa-moment3-2.jpg";
-import imagen3d3 from "../assets/images/europa-moment3/europa-moment3-3.jpg";
-import imagen4d3 from "../assets/images/europa-moment3/europa-moment3-4.jpg";
+import imagen1d3 from "../assets/images/europa-moment3/europa-moment3-1.webp";
+import imagen2d3 from "../assets/images/europa-moment3/europa-moment3-2.webp";
+import imagen3d3 from "../assets/images/europa-moment3/europa-moment3-3.webp";
+import imagen4d3 from "../assets/images/europa-moment3/europa-moment3-4.webp";
 //Logos de ligas
 import premierleague from "../assets/images/league-logos/premierleague.png";
 import seriea from "../assets/images/league-logos/seriea.png";

@@ -5,17 +5,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 //Imagenes legendas
-import maradona from "../assets/images/americalatina-legends/maradona.png";
-import pele from "../assets/images/americalatina-legends/pele.png";
+import maradona from "../assets/images/americalatina-legends/maradona.webp";
+import pele from "../assets/images/americalatina-legends/pele.webp";
 //Imagenes momento 1
-import imagen1d1 from "../assets/images/americalatina-moment1/americalatina-moment1-1.jpg";
-import imagen2d1 from "../assets/images/americalatina-moment1/americalatina-moment1-2.jpg";
-import imagen3d1 from "../assets/images/americalatina-moment1/americalatina-moment1-3.jpg";
-import imagen4d1 from "../assets/images/americalatina-moment1/americalatina-moment1-4.jpg";
+import imagen1d1 from "../assets/images/americalatina-moment1/americalatina-moment1-1.webp";
+import imagen2d1 from "../assets/images/americalatina-moment1/americalatina-moment1-2.webp";
+import imagen3d1 from "../assets/images/americalatina-moment1/americalatina-moment1-3.webp";
+import imagen4d1 from "../assets/images/americalatina-moment1/americalatina-moment1-4.webp";
 //Imagenes momento 2
-import imagen1d2 from "../assets/images/americalatina-moment2/americalatina-moment2-1.jpg";
-import imagen2d2 from "../assets/images/americalatina-moment2/americalatina-moment2-2.jpg";
-import imagen3d2 from "../assets/images/americalatina-moment2/americalatina-moment2-3.jpg";
+import imagen1d2 from "../assets/images/americalatina-moment2/americalatina-moment2-1.webp";
+import imagen2d2 from "../assets/images/americalatina-moment2/americalatina-moment2-2.webp";
+import imagen3d2 from "../assets/images/americalatina-moment2/americalatina-moment2-3.webp";
 //Logos de ligas
 import ligaargentina from "../assets/images/league-logos/ligaargentina.png";
 import ligabrasilera from "../assets/images/league-logos/ligabrasilera.png";
