@@ -58,7 +58,7 @@ const Europa = () => {
           </div>
           <div className="moments">
             <h2>ALGUNOS MOMENTOS MEMORABLES</h2>
-            <div className="moment">
+            <div className="moment reverse">
               <div className="moment-description">
                 <p>
                   La final de la Liga de Campeones de la UEFA de 2005, conocida
@@ -119,7 +119,7 @@ const Europa = () => {
                 </p>
               </div>
             </div>
-            <div className="moment">
+            <div className="moment reverse">
               <div className="moment-description">
                 <p>
                   La final de la Liga de Campeones de la UEFA de 2014: El Real

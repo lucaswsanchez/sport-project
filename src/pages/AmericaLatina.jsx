@@ -88,7 +88,7 @@ const AmericaLatina = () => {
                 </p>
               </div>
             </div>
-            <div className="moment">
+            <div className="moment reverse">
               <div className="moment-description">
                 <p>
                   El Superclásico argentino entre Boca Juniors y River Plate es

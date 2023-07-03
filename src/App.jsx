@@ -2,6 +2,7 @@ import React, { useEffect, useState, createContext, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import database from "../firebaseConfig.js";
+import ScrollToTop from "./components/ScrollToTop";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Europa from "./pages/Europa";
@@ -84,9 +85,10 @@ function App() {
           value={{ europaTeams, americaLatinaTeams, americaDelNorteTeams }}
         >
           <BrowserRouter>
+            <ScrollToTop />
             <Suspense fallback={<Loading />}>
               <Routes>
-                <Route path="/" element={<Home />} />
+                <Route exact path="/" element={<Home />} />
                 <Route path="/europa" element={<Europa />} />
                 <Route path="/americalatina" element={<AmericaLatina />} />
                 <Route path="/americadelnorte" element={<AmericaDelNorte />} />

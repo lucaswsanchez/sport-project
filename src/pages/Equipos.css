@@ -168,3 +168,33 @@
   object-fit: cover;
   border-radius: 5px;
 }
+
+@media screen and (max-width: 800px) {
+  .modal {
+    width: 95%;
+    height: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .equipos-container h1 {
+    height: 150px;
+  }
+
+  .equipos {
+    padding: 25px 0 25px 0;
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .equipos figure {
+    width: 250px;
+    padding: 10px;
+  }
+
+  .equipos figure figcaption {
+    padding-bottom: 10px;
+  }
+  
+}

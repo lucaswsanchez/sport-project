@@ -77,7 +77,7 @@ const AmericaDelNorte = () => {
                 </p>
               </div>
             </div>
-            <div className="moment">
+            <div className="moment reverse">
               <div className="moment-description">
                 <p>
                   Los clubes mexicanos han tenido un dominio destacado en la

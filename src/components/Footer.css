@@ -29,3 +29,17 @@
   list-style: none;
 }
 
+@media screen and (max-width:466px) {
+.footer-logo img {
+  width: 100px;
+}
+
+  .footer-list {
+    display: none;
+  }
+
+  .footer-text {
+    display: none;
+  }
+  
+}

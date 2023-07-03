@@ -29,3 +29,27 @@
   transform: scale(1.2);
   cursor: pointer;
 }
+
+@media screen and (max-width: 770px) {
+  .legends {
+    align-items: center;
+    padding: 10px 0 25px;
+  }
+
+  .legends-img {
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px 0 20px 0;
+  }
+
+  .legends-img img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .legends p {
+    font-size: 17px;
+    padding: 0 10px 0 10px;
+  }
+}
