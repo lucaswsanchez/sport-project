@@ -4,13 +4,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 //Imagenes momento 1
-import imagen1d1 from "../assets/images/americadelnorte-moment1/americadelnorte-moment1-1.jpg";
-import imagen2d1 from "../assets/images/americadelnorte-moment1/americadelnorte-moment1-2.jpg";
-import imagen3d1 from "../assets/images/americadelnorte-moment1/americadelnorte-moment1-3.jpg";
+import imagen1d1 from "../assets/images/americadelnorte-moment1/americadelnorte-moment1-1.webp";
+import imagen2d1 from "../assets/images/americadelnorte-moment1/americadelnorte-moment1-2.webp";
+import imagen3d1 from "../assets/images/americadelnorte-moment1/americadelnorte-moment1-3.webp";
 //Imagenes momento 2
-import imagen1d2 from "../assets/images/americadelnorte-moment2/americadelnorte-moment2-1.jpg";
-import imagen2d2 from "../assets/images/americadelnorte-moment2/americadelnorte-moment2-2.jpg";
-import imagen3d2 from "../assets/images/americadelnorte-moment2/americadelnorte-moment2-3.jpg";
+import imagen1d2 from "../assets/images/americadelnorte-moment2/americadelnorte-moment2-1.webp";
+import imagen2d2 from "../assets/images/americadelnorte-moment2/americadelnorte-moment2-2.webp";
+import imagen3d2 from "../assets/images/americadelnorte-moment2/americadelnorte-moment2-3.webp";
 //Logos de liga
 import ligamx from "../assets/images/league-logos/ligamx.png";
 import mls from "../assets/images/league-logos/mls.png";
