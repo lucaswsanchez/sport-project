@@ -14,8 +14,6 @@ import imagen3d2 from "../assets/images/americadelnorte-moment2/americadelnorte-
 //Logos de liga
 import ligamx from "../assets/images/league-logos/ligamx.png";
 import mls from "../assets/images/league-logos/mls.png";
-//Video de fondo
-import video from "../assets/videos/background-video.webm";
 
 const AmericaDelNorte = () => {
   const settings = {
@@ -30,77 +28,56 @@ const AmericaDelNorte = () => {
 
   return (
     <div className="americadelnorte-container">
-      <div className="video-container">
-        <video src={video} autoPlay muted loop className="background-video" />
-        <div className="capa"></div>
-        <div className="content-container">
-          <div className="introduction">
-            <h2>
-              América del Norte: Donde el Fútbol Encuentra su Propio Camino
-            </h2>
-            <p>
-              El fútbol en América del Norte tiene una historia diversa y en
-              constante crecimiento. Desde sus raíces en el siglo XIX, impulsado
-              por inmigrantes europeos, hasta el establecimiento de ligas
-              profesionales como la MLS, el fútbol ha ganado popularidad y
-              seguidores en la región. Aunque ha enfrentado desafíos en su
-              camino, el deporte ha logrado atraer jugadores de renombre
-              internacional y ha dado lugar a destacadas actuaciones en
-              competiciones internacionales. Con selecciones nacionales
-              competitivas y un aumento en el apoyo, el futuro del fútbol en
-              América del Norte parece prometedor.
-            </p>
-          </div>
-          <div className="moments">
-            <br></br>
-            <div className="moment">
-              <div className="moment-image">
-                <Slider {...settings}>
-                  <div>
-                    <img src={imagen1d1} alt="imagen1d2" />
-                  </div>
-                  <div>
-                    <img src={imagen2d1} alt="imagen2d2" />
-                  </div>
-                  <div>
-                    <img src={imagen3d1} alt="imagen3d2" />
-                  </div>
-                </Slider>
-              </div>
-              <div className="moment-description">
-                <p>
-                  En 1993, se fundó la MLS en los Estados Unidos con el objetivo
-                  de desarrollar el fútbol profesional en el país. La liga ha
-                  experimentado un crecimiento constante desde entonces y ha
-                  contribuido significativamente a la popularización del fútbol
-                  en América del Norte.
-                </p>
-              </div>
+      <div className="content-container">
+        <div className="moments">
+          <h2>America del Norte y el crecimiento del futbol</h2>
+          <div className="moment">
+            <div className="moment-image">
+              <Slider {...settings}>
+                <div>
+                  <img src={imagen1d1} alt="imagen1d2" />
+                </div>
+                <div>
+                  <img src={imagen2d1} alt="imagen2d2" />
+                </div>
+                <div>
+                  <img src={imagen3d1} alt="imagen3d2" />
+                </div>
+              </Slider>
             </div>
-            <div className="moment reverse">
-              <div className="moment-description">
-                <p>
-                  Los clubes mexicanos han tenido un dominio destacado en la
-                  Liga de Campeones de la CONCACAF, el torneo de clubes más
-                  importante de la región. Equipos como el Club América, Cruz
-                  Azul y Tigres UANL han conquistado el título en varias
-                  ocasiones, demostrando la fortaleza y competitividad del
-                  fútbol mexicano en el ámbito de clubes en América del Norte.
-                </p>
-              </div>
-              <div className="moment-image">
-                <Slider {...settings}>
-                  <div>
-                    <img src={imagen1d2} alt="imagen1d2" />
-                  </div>
-                  <div>
-                    <img src={imagen2d2} alt="imagen2d2" />
-                  </div>
-                  <div>
-                    <img src={imagen3d2} alt="imagen3d2" />
-                  </div>
-                </Slider>
-              </div>
+            <div className="moment-description">
+              <p>
+                En 1993, se fundó la MLS en los Estados Unidos con el objetivo
+                de desarrollar el fútbol profesional en el país. La liga ha
+                experimentado un crecimiento constante desde entonces y ha
+                contribuido significativamente a la popularización del fútbol en
+                América del Norte.
+              </p>
+            </div>
+          </div>
+          <div className="moment reverse">
+            <div className="moment-description">
+              <p>
+                Los clubes mexicanos han tenido un dominio destacado en la Liga
+                de Campeones de la CONCACAF, el torneo de clubes más importante
+                de la región. Equipos como el Club América, Cruz Azul y Tigres
+                UANL han conquistado el título en varias ocasiones, demostrando
+                la fortaleza y competitividad del fútbol mexicano en el ámbito
+                de clubes en América del Norte.
+              </p>
+            </div>
+            <div className="moment-image">
+              <Slider {...settings}>
+                <div>
+                  <img src={imagen1d2} alt="imagen1d2" />
+                </div>
+                <div>
+                  <img src={imagen2d2} alt="imagen2d2" />
+                </div>
+                <div>
+                  <img src={imagen3d2} alt="imagen3d2" />
+                </div>
+              </Slider>
             </div>
           </div>
         </div>

@@ -2,14 +2,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10px 0 50px 0;
-  gap: 20px;
+  padding: 20px 0 20px 0;
 }
 
 .legends p {
-  font-size: 20px;
-  padding: 0 50px 0 50px;
+  font-size: 18px;
+  width: 50%;
+  margin: auto;
   text-align: justify;
+  background-color: rgba(27, 27, 27, 0.05);
+  padding: 15px;
+  border-radius: 5px;
 }
 
 .legends-img {
@@ -17,7 +20,7 @@
   flex-direction: row;
   justify-content: center;
   gap: 150px;
-  padding: 50px 0 50px 0;
+  padding-top: 20px;
 }
 
 .legends-img img {
@@ -26,15 +29,18 @@
 }
 
 .legends-img img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   cursor: pointer;
 }
 
 @media screen and (max-width: 770px) {
   .legends {
     align-items: center;
-    padding: 10px 0 25px;
   }
+  
+   .legends p {
+    width: 70%;
+   }
 
   .legends-img {
     flex-direction: column;
@@ -49,7 +55,6 @@
 
 @media screen and (max-width: 500px) {
   .legends p {
-    font-size: 17px;
-    padding: 0 10px 0 10px;
+    width: 90%;
   }
 }
