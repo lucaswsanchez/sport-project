@@ -120,6 +120,7 @@
 
   .main-article {
     gap: 10px;
+    font-size: 13px;
     grid-column: 1 / 6;
     grid-row: 1 / 3;
   }
