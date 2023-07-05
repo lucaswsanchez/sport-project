@@ -1,7 +1,7 @@
 import React, { useEffect, useState, createContext, Suspense } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import database from "../firebaseConfig.js";
+import { database } from "../firebaseConfig.js";
 import ScrollToTop from "./components/ScrollToTop";
 import Header from "./components/Header";
 import Home from "./pages/Home";
@@ -9,6 +9,9 @@ import Europa from "./pages/Europa";
 import AmericaLatina from "./pages/AmericaLatina";
 import AmericaDelNorte from "./pages/AmericaDelNorte";
 import Footer from "./components/Footer";
+import LoginForm from "./components/LoginForm";
+import SignupForm from "./components/SignupForm";
+import { ToastContainer } from "react-toastify";
 
 //Componentes de ligas
 const Bundesliga = React.lazy(() => import("./pages/europa/Bundesliga"));
@@ -84,46 +87,44 @@ function App() {
         <RegionContext.Provider
           value={{ europaTeams, americaLatinaTeams, americaDelNorteTeams }}
         >
-          <BrowserRouter>
-            <ScrollToTop />
-            <Suspense fallback={<Loading />}>
-              <Routes>
-                <Route exact path="/" element={<Home />} />
-                <Route path="/europa" element={<Europa />} />
-                <Route path="/americalatina" element={<AmericaLatina />} />
-                <Route path="/americadelnorte" element={<AmericaDelNorte />} />
-                <Route path="/europa/bundesliga" element={<Bundesliga />} />
-                <Route
-                  path="/europa/premierleague"
-                  element={<PremierLeague />}
-                />
-                <Route path="/europa/laliga" element={<LaLiga />} />
-                <Route path="/europa/ligue1" element={<Ligue1 />} />
-                <Route path="/europa/seriea" element={<SerieA />} />
-                <Route
-                  path="/americalatina/ligaargentina"
-                  element={<LigaArgentina />}
-                />
-                <Route
-                  path="/americalatina/ligabrasilera"
-                  element={<LigaBrasilera />}
-                />
-                <Route
-                  path="/americadelnorte/ligamexicana"
-                  element={<LigaMexicana />}
-                />
-                <Route
-                  path="/americadelnorte/mayorsoccerleague"
-                  element={<MayorSoccerLeague />}
-                />
-              </Routes>
-            </Suspense>
-          </BrowserRouter>
+          <ScrollToTop />
+          <Suspense fallback={<Loading />}>
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+              <Route path="/login" element={<LoginForm />} />
+              <Route path="/signup" element={<SignupForm />} />
+              <Route path="/europa" element={<Europa />} />
+              <Route path="/americalatina" element={<AmericaLatina />} />
+              <Route path="/americadelnorte" element={<AmericaDelNorte />} />
+              <Route path="/europa/bundesliga" element={<Bundesliga />} />
+              <Route path="/europa/premierleague" element={<PremierLeague />} />
+              <Route path="/europa/laliga" element={<LaLiga />} />
+              <Route path="/europa/ligue1" element={<Ligue1 />} />
+              <Route path="/europa/seriea" element={<SerieA />} />
+              <Route
+                path="/americalatina/ligaargentina"
+                element={<LigaArgentina />}
+              />
+              <Route
+                path="/americalatina/ligabrasilera"
+                element={<LigaBrasilera />}
+              />
+              <Route
+                path="/americadelnorte/ligamexicana"
+                element={<LigaMexicana />}
+              />
+              <Route
+                path="/americadelnorte/mayorsoccerleague"
+                element={<MayorSoccerLeague />}
+              />
+            </Routes>
+          </Suspense>
         </RegionContext.Provider>
       </main>
       <footer>
         <Footer />
       </footer>
+      <ToastContainer />
     </div>
   );
 }
