@@ -14,6 +14,7 @@ import imagen3d2 from "../assets/images/americadelnorte-moment2/americadelnorte-
 //Logos de liga
 import ligamx from "../assets/images/league-logos/ligamx.png";
 import mls from "../assets/images/league-logos/mls.png";
+import CommentSection from "../components/CommentSection";
 
 const AmericaDelNorte = () => {
   const settings = {
@@ -103,6 +104,7 @@ const AmericaDelNorte = () => {
           </figcaption>
         </figure>
       </div>
+      <CommentSection region="americaDelNorte" />
     </div>
   );
 };

@@ -49,6 +49,9 @@
 .header-user p {
   color: white;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .form-btn {
@@ -97,7 +100,7 @@
 
   .header-user {
     width: 100%;
-    height: 50px;
+    height: 55px;
   }
 }
 

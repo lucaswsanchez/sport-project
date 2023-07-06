@@ -4,6 +4,7 @@ import { auth } from "../../firebaseConfig";
 import "./Header.css";
 import logo from "../assets/images/header-logo.webp";
 import { Link } from "react-router-dom";
+import { BiUserCircle } from "react-icons/bi";
 
 const Header = () => {
   const [user, setUser] = useState(null);
@@ -43,7 +44,9 @@ const Header = () => {
       </div>
       <div className="header-user">
         {user ? (
-          <p>Bienvenido, {user.email}</p>
+          <p>
+            <BiUserCircle size={19} />  {user.email}
+          </p>
         ) : (
           <div className="form-btn">
             <Link to="/login">

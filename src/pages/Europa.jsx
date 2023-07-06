@@ -25,6 +25,7 @@ import seriea from "../assets/images/league-logos/seriea.png";
 import bundesliga from "../assets/images/league-logos/bundesliga.png";
 import laliga from "../assets/images/league-logos/laliga.png";
 import ligue1 from "../assets/images/league-logos/ligue1.png";
+import CommentSection from "../components/CommentSection";
 
 const Europa = () => {
   const settings = {
@@ -179,6 +180,7 @@ const Europa = () => {
           </figcaption>
         </figure>
       </div>
+      <CommentSection region="europa" />
     </div>
   );
 };

@@ -19,6 +19,7 @@ import imagen3d2 from "../assets/images/americalatina-moment2/americalatina-mome
 //Logos de ligas
 import ligaargentina from "../assets/images/league-logos/ligaargentina.png";
 import ligabrasilera from "../assets/images/league-logos/ligabrasilera.png";
+import CommentSection from "../components/CommentSection";
 
 const AmericaLatina = () => {
   const settings = {
@@ -123,6 +124,7 @@ const AmericaLatina = () => {
           </figcaption>
         </figure>
       </div>
+      <CommentSection region="americaLatina" />
     </div>
   );
 };
