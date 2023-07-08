@@ -13,12 +13,26 @@ import news6 from "../assets/images/news-images/news6.jpg";
 import europe from "../assets/images/regions-logos/europe.png";
 import latinamerica from "../assets/images/regions-logos/latinamerica.png";
 import northamerica from "../assets/images/regions-logos/northamerica.png";
+import TeamsTableEurope from "../components/TeamsTableEurope";
+import TeamsTableLatinAmerica from "../components/TeamsTableLatinAmerica";
+import TeamsTableNorthAmerica from "../components/TeamsTableNorthAmerica";
 
 const Home = () => {
   return (
     <div className="home-container">
       <div className="home-header">
         <img src={homeheader} alt="homeheader" />
+      </div>
+      <div className="table">
+        <TeamsTableEurope ligaProps="bundesliga" />
+        <TeamsTableEurope ligaProps="laLiga" />
+        <TeamsTableEurope ligaProps="ligue1" />
+        <TeamsTableEurope ligaProps="serieA" />
+        <TeamsTableEurope ligaProps="premierLeague" />
+        <TeamsTableLatinAmerica ligaProps="ligaArgentina" />
+        <TeamsTableLatinAmerica ligaProps="ligaBrasilera" />
+        <TeamsTableNorthAmerica ligaProps="mayorSoccerLeague" />
+        <TeamsTableNorthAmerica ligaProps="ligaMexicana" />
       </div>
       <div className="grid-container">
         <article className="main-article">
