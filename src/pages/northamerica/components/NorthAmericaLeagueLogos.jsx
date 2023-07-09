@@ -3,26 +3,26 @@ import { Link } from "react-router-dom";
 import ligamx from "../../../assets/images/league-logos/ligamx.png";
 import mls from "../../../assets/images/league-logos/mls.png";
 
-const AmericaDelNorteLeagueLogos = () => {
+const NorthAmericaLeagueLogos = () => {
   return (
     <div>
       <div className="league-title">
-        <h2>Descubre sobre las ligas mas importantes de la region</h2>
+        <h2>Explore the most significant leagues in the region</h2>
       </div>
       <div className="league-logos">
         <figure className="league-logo">
           <img src={ligamx} alt="logo" />
           <figcaption>
-            <Link to="/americadelnorte/ligamexicana">
-              <button>Ver mas</button>
+            <Link to="/northamerica/ligamexicana">
+              <button>Learn more</button>
             </Link>
           </figcaption>
         </figure>
         <figure className="league-logo">
           <img src={mls} alt="logo" />
           <figcaption>
-            <Link to="/americadelnorte/mayorsoccerleague">
-              <button>Ver mas</button>
+            <Link to="/northamerica/mayorsoccerleague">
+              <button>Learn more</button>
             </Link>
           </figcaption>
         </figure>
@@ -31,4 +31,4 @@ const AmericaDelNorteLeagueLogos = () => {
   );
 };
 
-export default AmericaDelNorteLeagueLogos;
+export default NorthAmericaLeagueLogos;

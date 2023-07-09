@@ -14,7 +14,7 @@ import imagen1d2 from "../../../assets/images/americalatina-moment2/americalatin
 import imagen2d2 from "../../../assets/images/americalatina-moment2/americalatina-moment2-2.webp";
 import imagen3d2 from "../../../assets/images/americalatina-moment2/americalatina-moment2-3.webp";
 
-const AmericaLatinaMoments = () => {
+const LatinAmericaMoments = () => {
   const settings = {
     dots: true,
     arrows: false,
@@ -28,7 +28,7 @@ const AmericaLatinaMoments = () => {
   return (
     <div className="content-container">
       <div className="moments">
-        <h2>La fiebre futbolera de America Latina</h2>
+        <h2>The football passion of Latin America</h2>
         <div className="moment">
           <div className="moment-image">
             <Slider {...settings}>
@@ -45,21 +45,21 @@ const AmericaLatinaMoments = () => {
           </div>
           <div className="moment-description">
             <p>
-              Durante las décadas de 1950 y 1960, Pelé se convirtió en una
-              figura legendaria y llevó a Brasil a ganar tres Copas del Mundo
-              (1958, 1962 y 1970). Su estilo de juego y talento excepcional
-              marcaron un antes y un después en el fútbol sudamericano.
+              During the 1950s and 1960s, Pelé emerged as a legendary figure and
+              led Brazil to win three World Cups (1958, 1962, and 1970). His
+              playing style and exceptional talent left an indelible mark on
+              South American football, ushering in a new era.
             </p>
           </div>
         </div>
         <div className="moment reverse">
           <div className="moment-description">
             <p>
-              El Superclásico argentino entre Boca Juniors y River Plate es una
-              de las rivalidades más intensas y apasionantes del fútbol
-              latinoamericano. Puedes destacar la pasión y la historia detrás de
-              estos enfrentamientos, incluyendo la final histórica de la Copa
-              Libertadores de 2018 que capturó la atención del mundo entero.
+              The Argentine Superclásico between Boca Juniors and River Plate is
+              one of the most intense and passionate rivalries in Latin American
+              football. It's characterized by the passion and history behind
+              these encounters, including the historic 2018 Copa Libertadores
+              final that captivated the world's attention.
             </p>
           </div>
           <div className="moment-image">
@@ -82,11 +82,10 @@ const AmericaLatinaMoments = () => {
       </div>
       <div className="legends">
         <p>
-          La region ha producido algunas de las leyendas más destacadas del
-          deporte, como Pelé y Diego Maradona. Estos jugadores icónicos han
-          dejado una huella imborrable en la historia del fútbol, y su legado
-          continúa inspirando a generaciones de jóvenes futbolistas en toda la
-          región.
+          The region has produced some of the most prominent legends in sports,
+          such as Pelé and Diego Maradona. These iconic players have left an
+          indelible mark on the history of football, and their legacy continues
+          to inspire generations of young footballers throughout the region.
         </p>
         <div className="legends-img">
           <img src={maradona} alt="maradona" />
@@ -97,4 +96,4 @@ const AmericaLatinaMoments = () => {
   );
 };
 
-export default AmericaLatinaMoments;
+export default LatinAmericaMoments;

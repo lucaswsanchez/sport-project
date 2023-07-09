@@ -10,7 +10,7 @@ import imagen1d2 from "../../../assets/images/americadelnorte-moment2/americadel
 import imagen2d2 from "../../../assets/images/americadelnorte-moment2/americadelnorte-moment2-2.webp";
 import imagen3d2 from "../../../assets/images/americadelnorte-moment2/americadelnorte-moment2-3.webp";
 
-const AmericaDelNorteMoments = () => {
+const NorthAmericaMoments = () => {
   const settings = {
     dots: true,
     arrows: false,
@@ -24,7 +24,7 @@ const AmericaDelNorteMoments = () => {
   return (
     <div className="content-container">
       <div className="moments">
-        <h2>America del Norte y el crecimiento del futbol</h2>
+        <h2>North America and the growth of football</h2>
         <div className="moment">
           <div className="moment-image">
             <Slider {...settings}>
@@ -41,23 +41,22 @@ const AmericaDelNorteMoments = () => {
           </div>
           <div className="moment-description">
             <p>
-              En 1993, se fundó la MLS en los Estados Unidos con el objetivo de
-              desarrollar el fútbol profesional en el país. La liga ha
-              experimentado un crecimiento constante desde entonces y ha
-              contribuido significativamente a la popularización del fútbol en
-              América del Norte.
+              In 1993, the MLS (Major League Soccer) was established in the
+              United States with the objective of fostering the growth of
+              professional soccer in the country. Since then, the league has
+              consistently experienced growth and has played a significant role
+              in popularizing soccer in North America.
             </p>
           </div>
         </div>
         <div className="moment reverse">
           <div className="moment-description">
             <p>
-              Los clubes mexicanos han tenido un dominio destacado en la Liga de
-              Campeones de la CONCACAF, el torneo de clubes más importante de la
-              región. Equipos como el Club América, Cruz Azul y Tigres UANL han
-              conquistado el título en varias ocasiones, demostrando la
-              fortaleza y competitividad del fútbol mexicano en el ámbito de
-              clubes en América del Norte.
+              Mexican clubs have enjoyed a notable supremacy in the CONCACAF
+              Champions League, the most prominent club tournament in the
+              region. Teams like Club América, Cruz Azul, and Tigres UANL have
+              claimed the title on several occasions, showcasing the strength
+              and competitiveness of Mexican club football in North America.
             </p>
           </div>
           <div className="moment-image">
@@ -79,4 +78,4 @@ const AmericaDelNorteMoments = () => {
   );
 };
 
-export default AmericaDelNorteMoments;
+export default NorthAmericaMoments;

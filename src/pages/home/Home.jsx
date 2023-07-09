@@ -1,8 +1,8 @@
 import "../../styles/Home.css";
 import homeheader from "../../assets/images/home-logo.png";
-import TeamsTableEurope from "../europa/components/TeamsTableEurope";
-import TeamsTableLatinAmerica from "../americalatina/components/TeamsTableLatinAmerica";
-import TeamsTableNorthAmerica from "../americadelnorte/components/TeamsTableNorthAmerica";
+import TeamsTableEurope from "../europe/components/TeamsTableEurope";
+import TeamsTableLatinAmerica from "../latinamerica/components/TeamsTableLatinAmerica";
+import TeamsTableNorthAmerica from "../northamerica/components/TeamsTableNorthAmerica";
 import HomeNews from "./components/HomeNews";
 import HomeRegions from "./components/HomeRegions";
 

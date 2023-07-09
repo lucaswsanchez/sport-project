@@ -17,7 +17,8 @@ const HomeNews = () => {
           <img src={news1} alt="article" />
         </a>
         <p>
-          Harry Winks, primer fichaje del Leicester para volver a la Premier
+          Harry Winks, Leicester's first signing to return to the Premier
+          League.
         </p>
       </article>
       <article className="small-article">
@@ -28,7 +29,7 @@ const HomeNews = () => {
         >
           <img src={news2} alt="article" />
         </a>
-        <p>El Sevilla anuncia el fichaje de Pedrosa Adrià</p>
+        <p>Sevilla announces the signing of Pedrosa Adrià.</p>
       </article>
       <article className="small-article">
         <a
@@ -38,7 +39,7 @@ const HomeNews = () => {
         >
           <img src={news3} alt="article" />
         </a>
-        <p>Alex Matos y Diego Moreira, las nuevas perlas del Chelsea</p>
+        <p>Alex Matos and Diego Moreira, the new gems of Chelsea.</p>
       </article>
       <article className="small-article">
         <a
@@ -48,7 +49,7 @@ const HomeNews = () => {
         >
           <img src={news4} alt="article" />
         </a>
-        <p>El Aston Villa de Unai Emery ficha a Youri Tielemans</p>
+        <p>Aston Villa, managed by Unai Emery, signs Youri Tielemans.</p>
       </article>
       <article className="small-article">
         <a
@@ -58,7 +59,7 @@ const HomeNews = () => {
         >
           <img src={news5} alt="article" />
         </a>
-        <p>La millonada que prepara el PSG para reforzar el ataque</p>
+        <p>PSG is preparing millions to strengthen their attack.</p>
       </article>
       <article className="small-article">
         <a
@@ -68,10 +69,7 @@ const HomeNews = () => {
         >
           <img src={news6} alt="article" />
         </a>
-        <p>
-          El Real Madrid no oculta que el fichaje de Mbappé ahora es un
-          imposible
-        </p>
+        <p>Real Madrid doesn't hide that signing Mbappé now is impossible.</p>
       </article>
     </div>
   );

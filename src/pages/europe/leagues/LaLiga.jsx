@@ -1,9 +1,9 @@
 import { useContext, useState } from "react";
 import { RegionContext } from "../../../App";
-import "../../../styles/Equipos.css";
+import "../../../styles/Teams.css";
 import { AiFillCloseCircle } from "react-icons/ai";
 
-const SerieA = () => {
+const LaLiga = () => {
   const { europeTeams } = useContext(RegionContext);
   const [showModal, setShowModal] = useState(false);
   const [selectedStadium, setSelectedStadium] = useState(null);
@@ -20,28 +20,28 @@ const SerieA = () => {
 
   return (
     <div className="equipos-container">
-      <h1>SERIE A</h1>
+      <h1>LA LIGA</h1>
       <div className="equipos">
-        {europeTeams && europeTeams.serieA && europeTeams.serieA.equipos ? (
-          europeTeams.serieA.equipos.map((equipo) => (
+        {europeTeams && europeTeams.laLiga && europeTeams.laLiga.equipos ? (
+          europeTeams.laLiga.equipos.map((equipo) => (
             <figure key={equipo.id}>
               <img src={equipo.logo} alt={equipo.nombre} />
               <figcaption>
                 <p>{equipo.nombre}</p>
                 <ul>
-                  <li>PAIS: {equipo.pais}</li>
-                  <li>FUNDACION: {equipo.fundacion}</li>
-                  <li>LIGAS: {equipo.titulos_liga}</li>
+                  <li>COUNTRY: {equipo.pais}</li>
+                  <li>FOUNDED: {equipo.fundacion}</li>
+                  <li>LEAGUES: {equipo.titulos_liga}</li>
                   <li>CHAMPIONS LEAGUE: {equipo.titulos_champions}</li>
                 </ul>
                 <button onClick={() => handleOpenModal(equipo)}>
-                  Mostrar estadio
+                  Show Stadium
                 </button>
               </figcaption>
             </figure>
           ))
         ) : (
-          <p>Cargando equipos</p>
+          <p>Loading Teams</p>
         )}
       </div>
       {showModal && selectedStadium && (
@@ -67,4 +67,4 @@ const SerieA = () => {
   );
 };
 
-export default SerieA;
+export default LaLiga;

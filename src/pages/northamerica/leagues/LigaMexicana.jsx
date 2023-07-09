@@ -1,10 +1,10 @@
 import { useContext, useState } from "react";
 import { RegionContext } from "../../../App";
-import "../../../styles/Equipos.css";
+import "../../../styles/Teams.css";
 import { AiFillCloseCircle } from "react-icons/ai";
 
-const Ligue1 = () => {
-  const { europeTeams } = useContext(RegionContext);
+const LigaMexicana = () => {
+  const { northAmericaTeams } = useContext(RegionContext);
   const [showModal, setShowModal] = useState(false);
   const [selectedStadium, setSelectedStadium] = useState(null);
 
@@ -20,28 +20,30 @@ const Ligue1 = () => {
 
   return (
     <div className="equipos-container">
-      <h1>LIGUE 1</h1>
+      <h1>LIGA MEXICANA</h1>
       <div className="equipos">
-        {europeTeams && europeTeams.ligue1 && europeTeams.ligue1.equipos ? (
-          europeTeams.ligue1.equipos.map((equipo) => (
+        {northAmericaTeams &&
+        northAmericaTeams.ligaMexicana &&
+        northAmericaTeams.ligaMexicana.equipos ? (
+          northAmericaTeams.ligaMexicana.equipos.map((equipo) => (
             <figure key={equipo.id}>
               <img src={equipo.logo} alt={equipo.nombre} />
               <figcaption>
                 <p>{equipo.nombre}</p>
                 <ul>
-                  <li>PAIS: {equipo.pais}</li>
-                  <li>FUNDACION: {equipo.fundacion}</li>
-                  <li>LIGAS: {equipo.titulos_liga}</li>
-                  <li>CHAMPIONS LEAGUE: {equipo.titulos_champions}</li>
+                  <li>COUNTRY: {equipo.pais}</li>
+                  <li>FOUNDED: {equipo.fundacion}</li>
+                  <li>LEAGUES: {equipo.titulos_liga}</li>
+                  <li>CUPS: {equipo.titulos_copa}</li>
                 </ul>
                 <button onClick={() => handleOpenModal(equipo)}>
-                  Mostrar estadio
+                  Show Stadium
                 </button>
               </figcaption>
             </figure>
           ))
         ) : (
-          <p>Cargando equipos</p>
+          <p>Loading Teams</p>
         )}
       </div>
       {showModal && selectedStadium && (
@@ -67,4 +69,4 @@ const Ligue1 = () => {
   );
 };
 
-export default Ligue1;
+export default LigaMexicana;

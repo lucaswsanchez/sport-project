@@ -38,7 +38,7 @@ const CommentSection = ({ region }) => {
     e.preventDefault();
 
     if (!user) {
-      toast.error("Crea una cuenta para agregar un comentario.", {
+      toast.error("Create an account to add a comment.", {
         position: "bottom-right",
         autoClose: 2000,
         hideProgressBar: true,
@@ -48,12 +48,11 @@ const CommentSection = ({ region }) => {
         progress: undefined,
         theme: "colored",
       });
-      console.log("Usuario no autenticado. No se puede agregar un comentario.");
       return;
     }
 
     if (commentText.trim() === "") {
-      toast.error("El campo del comentario esta vacio.", {
+      toast.error("The comment field is empty.", {
         position: "bottom-right",
         autoClose: 2000,
         hideProgressBar: true,
@@ -63,7 +62,6 @@ const CommentSection = ({ region }) => {
         progress: undefined,
         theme: "colored",
       });
-      console.log("El campo del comentario está vacío.");
       return;
     }
 
@@ -79,9 +77,8 @@ const CommentSection = ({ region }) => {
       });
 
       setCommentText("");
-      console.log("Comentario agregado exitosamente.");
     } catch (error) {
-      toast.error("Error al agregar comentario", {
+      toast.error("Error while adding a comment.", {
         position: "bottom-right",
         autoClose: 2000,
         hideProgressBar: true,
@@ -91,7 +88,6 @@ const CommentSection = ({ region }) => {
         progress: undefined,
         theme: "colored",
       });
-      console.error("Error al agregar el comentario:", error);
     }
   };
 
@@ -101,7 +97,6 @@ const CommentSection = ({ region }) => {
         .database()
         .ref(`regiones/${region}/comments/${commentId}`);
       await commentRef.remove();
-      console.log("Comentario eliminado exitosamente.");
     } catch (error) {
       console.error("Error al eliminar el comentario:", error);
     }
@@ -109,14 +104,14 @@ const CommentSection = ({ region }) => {
 
   return (
     <div className="comments-container">
-      <h2>Comentarios</h2>
+      <h2>Comments</h2>
       <form onSubmit={handleCommentSubmit}>
         <textarea
-          placeholder="Escribe tu comentario..."
+          placeholder="Write your comment..."
           value={commentText}
           onChange={(e) => setCommentText(e.target.value)}
         />
-        <button type="submit">Enviar</button>
+        <button type="submit">Send</button>
       </form>
       <div className="comments">
         {comments.map((comment) => (
@@ -128,7 +123,7 @@ const CommentSection = ({ region }) => {
             <p className="comment-text">{comment.comment}</p>
             {user && user.uid === comment.userId && (
               <button onClick={() => handleCommentDelete(comment.id)}>
-                Eliminar
+                Delete
               </button>
             )}
           </div>

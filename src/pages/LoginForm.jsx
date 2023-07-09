@@ -15,7 +15,7 @@ const LoginForm = () => {
       await auth.signInWithEmailAndPassword(email, password);
       navigate("/");
     } catch (error) {
-      toast.error("Cuenta inexistente", {
+      toast.error("Account not found", {
         position: "bottom-right",
         autoClose: 2000,
         hideProgressBar: true,
@@ -36,10 +36,10 @@ const LoginForm = () => {
 
   return (
     <div className="form-container">
-      <h2>Ingresa a tu cuenta</h2>
+      <h2>Enter your account</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-inputs">
-          <label htmlFor="email">Correo electrónico:</label>
+          <label htmlFor="email">Email: </label>
           <input
             type="email"
             id="email"
@@ -48,7 +48,7 @@ const LoginForm = () => {
           />
         </div>
         <div className="form-inputs">
-          <label htmlFor="password">Contraseña:</label>
+          <label htmlFor="password">Password: </label>
           <input
             type="password"
             id="password"
@@ -56,7 +56,7 @@ const LoginForm = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button type="submit">Iniciar sesión</button>
+        <button type="submit">Log In</button>
       </form>
     </div>
   );

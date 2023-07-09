@@ -8,8 +8,8 @@ function formatCamelCaseString(camelCaseString) {
     .replace(/^./, (str) => str.toUpperCase());
 }
 
-const TeamsTableEurope = ({ ligaProps }) => {
-  const { europeTeams } = useContext(RegionContext);
+const TeamsTableNorthAmerica = ({ ligaProps }) => {
+  const { northAmericaTeams } = useContext(RegionContext);
   const formattedLigaProps = formatCamelCaseString(ligaProps);
 
   return (
@@ -18,20 +18,20 @@ const TeamsTableEurope = ({ ligaProps }) => {
       <table>
         <thead>
           <tr>
-            <th>Equipo</th>
-            <th>PJ</th>
-            <th>PG</th>
-            <th>PE</th>
-            <th>PP</th>
+            <th>Teams</th>
+            <th>MP</th>
+            <th>W</th>
+            <th>D</th>
+            <th>L</th>
             <th>GF</th>
-            <th>GC</th>
-            <th>Puntos</th>
+            <th>GA</th>
+            <th>Points</th>
           </tr>
         </thead>
         <tbody>
-          {europeTeams &&
-            europeTeams[ligaProps] &&
-            europeTeams[ligaProps].equipos.map((equipo) => (
+          {northAmericaTeams &&
+            northAmericaTeams[ligaProps] &&
+            northAmericaTeams[ligaProps].equipos.map((equipo) => (
               <tr key={equipo.id}>
                 <td className="team-name">
                   <img src={equipo.logo} alt={equipo.nombre} />
@@ -52,4 +52,4 @@ const TeamsTableEurope = ({ ligaProps }) => {
   );
 };
 
-export default TeamsTableEurope;
+export default TeamsTableNorthAmerica;

@@ -18,7 +18,7 @@ import imagen2d3 from "../../../assets/images/europa-moment3/europa-moment3-2.we
 import imagen3d3 from "../../../assets/images/europa-moment3/europa-moment3-3.webp";
 import imagen4d3 from "../../../assets/images/europa-moment3/europa-moment3-4.webp";
 
-const EuropaMoments = () => {
+const EuropeMoments = () => {
   const settings = {
     dots: true,
     arrows: false,
@@ -32,18 +32,17 @@ const EuropaMoments = () => {
   return (
     <div className="content-container">
       <div className="moments">
-        <h2>El futbol en Europa</h2>
+        <h2>Football in Europe</h2>
         <div className="moment reverse">
           <div className="moment-description">
             <p>
-              La final de la Liga de Campeones de la UEFA de 2005, conocida como
-              el "Milagro de Estambul": El AC Milan y el Liverpool se
-              enfrentaron en la final, donde el equipo italiano tomó una ventaja
-              de 3-0 en la primera mitad. Sin embargo, en una actuación
-              memorable, el Liverpool logró empatar el partido 3-3 en el segundo
-              tiempo y ganó en la tanda de penales. Fue un partido lleno de
-              emoción y una de las mayores remontadas en la historia de las
-              finales de la Liga de Campeones.
+              2005 UEFA Champions League final, famously known as the 'Miracle
+              of Istanbul': AC Milan and Liverpool faced off in the final, with
+              the Italian team taking a 3-0 lead in the first half. However, in
+              a memorable performance, Liverpool managed to equalize the match
+              3-3 in the second half and won in the penalty shootout. It was a
+              thrilling game and one of the greatest comebacks in the history of
+              Champions League finals.
             </p>
           </div>
           <div className="moment-image">
@@ -85,24 +84,24 @@ const EuropaMoments = () => {
           </div>
           <div className="moment-description">
             <p>
-              El triplete del FC Barcelona en la temporada 2008-2009: Bajo la
-              dirección de Pep Guardiola, el Barcelona logró ganar la Liga, la
-              Copa del Rey y la Liga de Campeones en una misma temporada. Fue un
-              logro impresionante que destacó por el estilo de juego ofensivo y
-              dominante del equipo, liderado por jugadores como Lionel Messi,
-              Xavi Hernández y Andrés Iniesta.
+              The historic treble of FC Barcelona in the 2008-2009 season: Led
+              by Pep Guardiola, Barcelona triumphed in the league, Copa del Rey,
+              and Champions League within a single season. This remarkable
+              achievement showcased the team's attacking prowess and dominance,
+              driven by exceptional players like Lionel Messi, Xavi Hernández,
+              and Andrés Iniesta.
             </p>
           </div>
         </div>
         <div className="moment reverse">
           <div className="moment-description">
             <p>
-              La final de la Liga de Campeones de la UEFA de 2014: El Real
-              Madrid se enfrentó al Atlético de Madrid en una final emocionante.
-              El partido se fue a la prórroga con un empate 1-1, pero el Real
-              Madrid se impuso en el tiempo extra, ganando 4-1. Fue la décima
-              vez que el Real Madrid ganó la Liga de Campeones, un hito
-              histórico conocido como "La Décima" para el club.
+              2014 UEFA Champions League final: Real Madrid faced off against
+              Atlético Madrid in a thrilling final. The match ended in a 1-1
+              draw and went into extra time, where Real Madrid emerged
+              victorious with a 4-1 win. It marked the tenth time that Real
+              Madrid secured the Champions League title, a historic milestone
+              known as 'La Décima' for the club.
             </p>
           </div>
           <div className="moment-image">
@@ -127,4 +126,4 @@ const EuropaMoments = () => {
   );
 };
 
-export default EuropaMoments;
+export default EuropeMoments;

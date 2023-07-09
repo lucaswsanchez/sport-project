@@ -50,16 +50,16 @@ const Header = () => {
         ) : (
           <div className="form-btn">
             <Link to="/login">
-              <button>Iniciar Sesion</button>
+              <button>Log In</button>
             </Link>
             <Link to="/signup">
-              <button>Registrarse</button>
+              <button>Sign Up</button>
             </Link>
           </div>
         )}
         {user && (
           <div className="form-btn-out">
-            <button onClick={handleLogout}>Cerrar sesión</button>
+            <button onClick={handleLogout}>Log Out</button>
           </div>
         )}
       </div>

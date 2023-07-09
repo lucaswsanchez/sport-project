@@ -1,10 +1,10 @@
 import { useContext, useState } from "react";
 import { RegionContext } from "../../../App";
-import "../../../styles/Equipos.css";
+import "../../../styles/Teams.css";
 import { AiFillCloseCircle } from "react-icons/ai";
 
-const PremierLeague = () => {
-  const { europeTeams } = useContext(RegionContext);
+const LigaBrasilera = () => {
+  const { latinAmericaTeams } = useContext(RegionContext);
   const [showModal, setShowModal] = useState(false);
   const [selectedStadium, setSelectedStadium] = useState(null);
 
@@ -20,28 +20,30 @@ const PremierLeague = () => {
 
   return (
     <div className="equipos-container">
-      <h1>PREMIER LEAGUE</h1>
+      <h1>LIGA BRASILERA</h1>
       <div className="equipos">
-        {europeTeams && europeTeams.premierLeague && europeTeams.premierLeague.equipos ? (
-          europeTeams.premierLeague.equipos.map((equipo) => (
+        {latinAmericaTeams &&
+        latinAmericaTeams.ligaBrasilera &&
+        latinAmericaTeams.ligaBrasilera.equipos ? (
+          latinAmericaTeams.ligaBrasilera.equipos.map((equipo) => (
             <figure key={equipo.id}>
               <img src={equipo.logo} alt={equipo.nombre} />
               <figcaption>
                 <p>{equipo.nombre}</p>
                 <ul>
-                  <li>PAIS: {equipo.pais}</li>
-                  <li>FUNDACION: {equipo.fundacion}</li>
-                  <li>LIGAS: {equipo.titulos_liga}</li>
-                  <li>CHAMPIONS LEAGUE: {equipo.titulos_champions}</li>
+                  <li>COUNTRY: {equipo.pais}</li>
+                  <li>FOUNDED: {equipo.fundacion}</li>
+                  <li>LEAGUES: {equipo.titulos_liga}</li>
+                  <li>LIBERTADORES: {equipo.titulos_libertadores}</li>
                 </ul>
                 <button onClick={() => handleOpenModal(equipo)}>
-                  Mostrar estadio
+                  Show Stadium
                 </button>
               </figcaption>
             </figure>
           ))
         ) : (
-          <p>Cargando equipos</p>
+          <p>Loading Teams</p>
         )}
       </div>
       {showModal && selectedStadium && (
@@ -67,4 +69,4 @@ const PremierLeague = () => {
   );
 };
 
-export default PremierLeague;
+export default LigaBrasilera;

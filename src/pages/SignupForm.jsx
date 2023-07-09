@@ -16,7 +16,7 @@ const SignupForm = () => {
       await auth.createUserWithEmailAndPassword(email, password);
       navigate("/");
     } catch (error) {
-      toast.error("Email ya en uso!", {
+      toast.error("Email already in use!", {
         position: "bottom-right",
         autoClose: 2000,
         hideProgressBar: true,
@@ -32,10 +32,10 @@ const SignupForm = () => {
 
   return (
     <div className="form-container">
-      <h2>Crea tu cuenta</h2>
+      <h2>Create your account</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-inputs">
-          <label htmlFor="email">Correo electrónico:</label>
+          <label htmlFor="email">Email: </label>
           <input
             type="email"
             id="email"
@@ -44,7 +44,7 @@ const SignupForm = () => {
           />
         </div>
         <div className="form-inputs">
-          <label htmlFor="password">Contraseña:</label>
+          <label htmlFor="password">Password: </label>
           <input
             type="password"
             id="password"
@@ -52,7 +52,7 @@ const SignupForm = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <button type="submit">Registrarse</button>
+        <button type="submit">Sign Up</button>
       </form>
     </div>
   );

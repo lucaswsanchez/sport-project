@@ -6,29 +6,29 @@ import northamerica from "../../../assets/images/regions-logos/northamerica.png"
 const HomeRegions = () => {
   return (
     <div className="regions-container">
-      <h2>Explora sobre el futbol en regiones globales</h2>
+      <h2>Explore about football in global regions</h2>
       <div className="regions-figure">
         <figure>
           <img src={europe} alt="europe" />
           <figcaption>
-            <Link to="/europa">
-              <button>EUROPA</button>
+            <Link to="/europe">
+              <button>EUROPE</button>
             </Link>
           </figcaption>
         </figure>
         <figure>
           <img src={latinamerica} alt="latinamerica" />
           <figcaption>
-            <Link to="/americalatina">
-              <button>AMERICA LATINA</button>
+            <Link to="/latinamerica">
+              <button>LATIN AMERICA</button>
             </Link>
           </figcaption>
         </figure>
         <figure>
           <img src={northamerica} alt="northamerica" />
           <figcaption>
-            <Link to="/americadelnorte">
-              <button>AMERICA DEL NORTE</button>
+            <Link to="/northamerica">
+              <button>NORTH AMERICA</button>
             </Link>
           </figcaption>
         </figure>

@@ -18,14 +18,14 @@ const TeamsTableLatinAmerica = ({ ligaProps }) => {
       <table>
         <thead>
           <tr>
-            <th>Equipo</th>
-            <th>PJ</th>
-            <th>PG</th>
-            <th>PE</th>
-            <th>PP</th>
+            <th>Teams</th>
+            <th>MP</th>
+            <th>W</th>
+            <th>D</th>
+            <th>L</th>
             <th>GF</th>
-            <th>GC</th>
-            <th>Puntos</th>
+            <th>GA</th>
+            <th>Points</th>
           </tr>
         </thead>
         <tbody>
