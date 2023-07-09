@@ -18,9 +18,9 @@ function Loading() {
 export const RegionContext = createContext();
 
 function App() {
-  const [europaTeams, setEuropaTeams] = useState([]);
-  const [americaLatinaTeams, setAmericaLatinaTeams] = useState([]);
-  const [americaDelNorteTeams, setAmericaDelNorteTeams] = useState([]);
+  const [europeTeams, setEuropeTeams] = useState([]);
+  const [latinAmericaTeams, setLatinAmericaTeams] = useState([]);
+  const [northAmericaTeams, setNorthAmericaTeams] = useState([]);
 
   useEffect(() => {
     const getTeams = async () => {
@@ -28,9 +28,9 @@ function App() {
         const snapshot = await database.ref("regiones").once("value");
         const data = snapshot.val();
 
-        setEuropaTeams(data.europa);
-        setAmericaLatinaTeams(data.americaLatina);
-        setAmericaDelNorteTeams(data.americaDelNorte);
+        setEuropeTeams(data.europa);
+        setLatinAmericaTeams(data.americaLatina);
+        setNorthAmericaTeams(data.americaDelNorte);
       } catch (error) {
         console.error(error);
       }
@@ -46,7 +46,7 @@ function App() {
       </header>
       <main>
         <RegionContext.Provider
-          value={{ europaTeams, americaLatinaTeams, americaDelNorteTeams }}
+          value={{ europeTeams, latinAmericaTeams, northAmericaTeams }}
         >
           <ScrollToTop />
           <Suspense fallback={<Loading />}>

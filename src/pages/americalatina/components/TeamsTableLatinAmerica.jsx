@@ -9,7 +9,7 @@ function formatCamelCaseString(camelCaseString) {
 }
 
 const TeamsTableLatinAmerica = ({ ligaProps }) => {
-  const { americaLatinaTeams } = useContext(RegionContext);
+  const { latinAmericaTeams } = useContext(RegionContext);
   const formattedLigaProps = formatCamelCaseString(ligaProps);
 
   return (
@@ -29,9 +29,9 @@ const TeamsTableLatinAmerica = ({ ligaProps }) => {
           </tr>
         </thead>
         <tbody>
-          {americaLatinaTeams &&
-            americaLatinaTeams[ligaProps] &&
-            americaLatinaTeams[ligaProps].equipos.map((equipo) => (
+          {latinAmericaTeams &&
+            latinAmericaTeams[ligaProps] &&
+            latinAmericaTeams[ligaProps].equipos.map((equipo) => (
               <tr key={equipo.id}>
                 <td className="team-name">
                   <img src={equipo.logo} alt={equipo.nombre} />

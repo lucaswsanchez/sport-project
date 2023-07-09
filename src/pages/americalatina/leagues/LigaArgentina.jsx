@@ -4,7 +4,7 @@ import "../../../styles/Equipos.css";
 import { AiFillCloseCircle } from "react-icons/ai";
 
 const LigaArgentina = () => {
-  const { americaLatinaTeams } = useContext(RegionContext);
+  const { latinAmericaTeams } = useContext(RegionContext);
   const [showModal, setShowModal] = useState(false);
   const [selectedStadium, setSelectedStadium] = useState(null);
 
@@ -22,10 +22,10 @@ const LigaArgentina = () => {
     <div className="equipos-container">
       <h1>LIGA ARGENTINA</h1>
       <div className="equipos">
-        {americaLatinaTeams &&
-        americaLatinaTeams.ligaArgentina &&
-        americaLatinaTeams.ligaArgentina.equipos ? (
-          americaLatinaTeams.ligaArgentina.equipos.map((equipo) => (
+        {latinAmericaTeams &&
+        latinAmericaTeams.ligaArgentina &&
+        latinAmericaTeams.ligaArgentina.equipos ? (
+          latinAmericaTeams.ligaArgentina.equipos.map((equipo) => (
             <figure key={equipo.id}>
               <img src={equipo.logo} alt={equipo.nombre} />
               <figcaption>

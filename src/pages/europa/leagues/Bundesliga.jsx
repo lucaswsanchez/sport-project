@@ -4,7 +4,7 @@ import "../../../styles/Equipos.css";
 import { AiFillCloseCircle } from "react-icons/ai";
 
 const Bundesliga = () => {
-  const { europaTeams } = useContext(RegionContext);
+  const { europeTeams } = useContext(RegionContext);
   const [showModal, setShowModal] = useState(false);
   const [selectedStadium, setSelectedStadium] = useState(null);
 
@@ -22,8 +22,8 @@ const Bundesliga = () => {
     <div className="equipos-container">
       <h1>BUNDESLIGA</h1>
       <div className="equipos">
-        {europaTeams && europaTeams.bundesliga && europaTeams.bundesliga.equipos ? (
-          europaTeams.bundesliga.equipos.map((equipo) => (
+        {europeTeams && europeTeams.bundesliga && europeTeams.bundesliga.equipos ? (
+          europeTeams.bundesliga.equipos.map((equipo) => (
             <figure key={equipo.id}>
               <img src={equipo.logo} alt={equipo.nombre} />
               <figcaption>

@@ -4,7 +4,7 @@ import "../../../styles/Equipos.css";
 import { AiFillCloseCircle } from "react-icons/ai";
 
 const Ligue1 = () => {
-  const { europaTeams } = useContext(RegionContext);
+  const { europeTeams } = useContext(RegionContext);
   const [showModal, setShowModal] = useState(false);
   const [selectedStadium, setSelectedStadium] = useState(null);
 
@@ -22,8 +22,8 @@ const Ligue1 = () => {
     <div className="equipos-container">
       <h1>LIGUE 1</h1>
       <div className="equipos">
-        {europaTeams && europaTeams.ligue1 && europaTeams.ligue1.equipos ? (
-          europaTeams.ligue1.equipos.map((equipo) => (
+        {europeTeams && europeTeams.ligue1 && europeTeams.ligue1.equipos ? (
+          europeTeams.ligue1.equipos.map((equipo) => (
             <figure key={equipo.id}>
               <img src={equipo.logo} alt={equipo.nombre} />
               <figcaption>
