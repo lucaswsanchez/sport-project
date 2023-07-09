@@ -1,57 +1,18 @@
 import React, { useEffect, useState, createContext, Suspense } from "react";
-import { Routes, Route } from "react-router-dom";
-import "./App.css";
+import "./styles/App.css";
 import { database } from "../firebaseConfig.js";
-import ScrollToTop from "./components/ScrollToTop";
-import Header from "./components/Header";
-import Home from "./pages/Home";
-import Europa from "./pages/Europa";
-import AmericaLatina from "./pages/AmericaLatina";
-import AmericaDelNorte from "./pages/AmericaDelNorte";
-import Footer from "./components/Footer";
-import LoginForm from "./components/LoginForm";
-import SignupForm from "./components/SignupForm";
 import { ToastContainer } from "react-toastify";
-
-//Componentes de ligas
-const Bundesliga = React.lazy(() => import("./pages/europa/Bundesliga"));
-const LaLiga = React.lazy(() => delayForDemo(import("./pages/europa/LaLiga")));
-const SerieA = React.lazy(() => import("./pages/europa/SerieA"));
-const PremierLeague = React.lazy(() => import("./pages/europa/PremierLeague"));
-const Ligue1 = React.lazy(() => import("./pages/europa/Ligue1"));
-const LigaArgentina = React.lazy(() =>
-  import("./pages/americalatina/LigaArgentina")
-);
-const LigaBrasilera = React.lazy(() =>
-  import("./pages/americalatina/LigaBrasilera")
-);
-const LigaMexicana = React.lazy(() =>
-  import("./pages/americadelnorte/LigaMexicana")
-);
-const MayorSoccerLeague = React.lazy(() =>
-  import("./pages/americadelnorte/MayorSoccerLeague")
-);
+import Header from "./components/layout/Header";
+import ScrollToTop from "./components/utils/ScrollToTop";
+import AppRoutes from "./components/utils/AppRoutes";
+import Footer from "./components/layout/Footer";
 
 function Loading() {
   return (
-    <h1
-      style={{
-        height: "100vh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
-      Loading...
-    </h1>
+    <div className="spinner-container">
+      <div className="spinner"></div>
+    </div>
   );
-}
-
-async function delayForDemo(promise) {
-  await new Promise((resolve) => {
-    setTimeout(resolve, 1500);
-  });
-  return promise;
 }
 
 export const RegionContext = createContext();
@@ -89,35 +50,7 @@ function App() {
         >
           <ScrollToTop />
           <Suspense fallback={<Loading />}>
-            <Routes>
-              <Route exact path="/" element={<Home />} />
-              <Route path="/login" element={<LoginForm />} />
-              <Route path="/signup" element={<SignupForm />} />
-              <Route path="/europa" element={<Europa />} />
-              <Route path="/americalatina" element={<AmericaLatina />} />
-              <Route path="/americadelnorte" element={<AmericaDelNorte />} />
-              <Route path="/europa/bundesliga" element={<Bundesliga />} />
-              <Route path="/europa/premierleague" element={<PremierLeague />} />
-              <Route path="/europa/laliga" element={<LaLiga />} />
-              <Route path="/europa/ligue1" element={<Ligue1 />} />
-              <Route path="/europa/seriea" element={<SerieA />} />
-              <Route
-                path="/americalatina/ligaargentina"
-                element={<LigaArgentina />}
-              />
-              <Route
-                path="/americalatina/ligabrasilera"
-                element={<LigaBrasilera />}
-              />
-              <Route
-                path="/americadelnorte/ligamexicana"
-                element={<LigaMexicana />}
-              />
-              <Route
-                path="/americadelnorte/mayorsoccerleague"
-                element={<MayorSoccerLeague />}
-              />
-            </Routes>
+            <AppRoutes />
           </Suspense>
         </RegionContext.Provider>
       </main>
