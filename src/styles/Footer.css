@@ -29,10 +29,11 @@
   list-style: none;
 }
 
-@media screen and (max-width:466px) {
-.footer-logo img {
-  width: 100px;
-}
+@media screen and (max-width: 466px) {
+  .footer-logo img {
+    width: 100px;
+    margin-left: 35px;
+  }
 
   .footer-list {
     display: none;
@@ -41,5 +42,4 @@
   .footer-text {
     display: none;
   }
-  
 }

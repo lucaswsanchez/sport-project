@@ -90,6 +90,10 @@
     width: 100%;
   }
 
+  .header-logo img {
+    margin-left: 35px;
+  }
+
   .header-nav {
     width: 100%;
   }
