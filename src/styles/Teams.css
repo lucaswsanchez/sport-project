@@ -196,5 +196,16 @@
   .equipos figure figcaption {
     padding-bottom: 10px;
   }
-  
+
+  .modal {
+    height: 99%;
+  }
+
+  .modal-header {
+    height: 15%;
+  }
+
+  .modal-image {
+    height: 85%;
+  }
 }
