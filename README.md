@@ -20,7 +20,7 @@ Puedes ver una demostración en vivo del proyecto [aquí](https://sport-project.
 - Permitir a los usuarios realizar comentarios en las diferentes secciones del blog.
 
 ## Tecnologías utilizadas
-- Javascript
+- JavaScript
 - HTML
 - CSS
 - React
