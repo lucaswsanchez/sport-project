@@ -3,7 +3,7 @@
 ![Futbol Blog](/src/assets/images/screenshot1.png)
 
 ## Descripción
-Este es un proyecto que esta en desarrollo, en donde se creo un blog de futbol con React y Firebase. El blog ofrece una plataforma para que los aficionados al fútbol puedan explorar y discutir sobre las ligas más importantes del mundo. El proyecto Firebase como backend para obtener información sobre los equipos y las ligas. Además, utiliza la autenticacion de Firebase la cual permite a los usuarios registrarse con su correo electrónico y realizar comentarios en las diferentes secciones del blog.
+Este es un proyecto que esta en desarrollo, en donde se creo un blog de futbol con React y Firebase. El blog ofrece una plataforma para que los aficionados al fútbol puedan explorar y discutir sobre las ligas más importantes del mundo. El proyecto utiliza Firebase como backend para obtener información sobre los equipos y las ligas. Además, utiliza la autenticacion de Firebase la cual permite a los usuarios registrarse con su correo electrónico y realizar comentarios en las diferentes secciones del blog.
 
 ## Demo
 Puedes ver una demostración en vivo del proyecto [aquí](https://sport-project.netlify.app/).
