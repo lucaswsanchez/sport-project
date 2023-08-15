@@ -1,30 +1,31 @@
-# Blog de futbol
+# Football blog
 
 ![Futbol Blog](/src/assets/images/screenshot1.png)
 
-## Descripción
-Este es un proyecto que esta en desarrollo, en donde se creo un blog de futbol con React y Firebase. El blog ofrece una plataforma para que los aficionados al fútbol puedan explorar y discutir sobre las ligas más importantes del mundo. El proyecto utiliza Firebase como backend para obtener información sobre los equipos y las ligas. Además, utiliza la autenticacion de Firebase la cual permite a los usuarios registrarse con su correo electrónico y realizar comentarios en las diferentes secciones del blog.
+## Description
+This is a project under development, where I'm creating a football blog with React and Firebase. The blog provides a platform for football fans to explore and discuss about the most important leagues in the world. The project uses Firebase as a backend to get information about teams and leagues. In addition, it uses Firebase authentication which allows users to log in with their email and leave comments on the different sections of the blog.
 
 ## Demo
-Puedes ver una demostración en vivo del proyecto [aquí](https://sport-project.netlify.app/).
+You can see a live demo of the project [here](https://sport-project.netlify.app/).
 
-## Capturas de pantalla
+## Screenshots
 ![Captura de pantalla 1](/src/assets/images/screenshot2.png)
 ![Captura de pantalla 2](/src/assets/images/screenshot3.png)
 
-## Funcionalidades
-- Visualización de ligas importantes del mundo.
-- Mostrar información detallada de cada liga.
-- Obtener datos de equipos mediante la API de Firebase.
-- Registro y autenticación de usuarios con Firebase Auth.
-- Permitir a los usuarios realizar comentarios en las diferentes secciones del blog.
+## Functionalities
+- Visualization of differents leagues in the world.
+- Display detailed information of each league.
+- Display information about the different teams and their stadiums.
+- Get team data through Firebase API.
+- User registration and authentication with Firebase Auth.
+- Allow users to comment on the different sections of the blog.
 
-## Tecnologías utilizadas
+## Used technologies
 - JavaScript
 - HTML
 - CSS
 - React
 - Firebase
 
-## Contacto
-Si tienes alguna pregunta o comentario, puedes contactarme en https://www.linkedin.com/in/lucaswsanchez/
+## Contact
+If you have any questions or comments, you can contact me at https://www.linkedin.com/in/lucaswsanchez/
